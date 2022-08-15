@@ -143,36 +143,36 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="black" checked tabindex="-1">
-                      <span class="control-mark" tabindex="0"></span>
+                      <input class="control-input visually-hidden" type="checkbox" name="black" checked >
+                      <span class="control-mark"></span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="white" checked tabindex="-1">
-                      <span class="control-mark" tabindex="0"></span>
+                      <input class="control-input visually-hidden" type="checkbox" name="white" checked >
+                      <span class="control-mark" ></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="blue" tabindex="-1">
-                      <span class="control-mark" tabindex="0"></span>
+                      <input class="control-input visually-hidden" type="checkbox" name="blue">
+                      <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="red" tabindex="-1">
-                      <span class="control-mark" tabindex="0"></span>
+                      <input class="control-input visually-hidden" type="checkbox" name="red" >
+                      <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="pink" tabindex="-1">
-                      <span class="control-mark" tabindex="0"></span>
+                      <input class="control-input visually-hidden" type="checkbox" name="pink" >
+                      <span class="control-mark" ></span>
                       <span class="control-label">Розовый</span>
                     </label>
                   </li>
@@ -184,16 +184,15 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input visually-hidden" type="radio" name="bluetooth" value="yes" checked
-                        tabindex="-1">
-                      <span class="control-mark-radio" tabindex="0"></span>
+                        tabindex="">
+                      <span class="control-mark-radio" ></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item filter-radio">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="radio" name="bluetooth" value="no"
-                        tabindex="-1">
-                      <span class="control-mark-radio" tabindex="0"></span>
+                      <input class="control-input visually-hidden" type="radio" name="bluetooth" value="no">
+                      <span class="control-mark-radio" ></span>
                       <span class="control-label">Нет</span>
                     </label>
                   </li>
@@ -215,21 +214,22 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="wrapper-arrow-button">
-                <a class="sorting-arrow-button button-up">
+                <a class="sorting-arrow-button button-up" tabindex="0">
                   <span class="visually-hidden">От меньшего к большему</span>
                 </a>
               </div>
               <div class="wrapper-arrow-button">
-                <a class="sorting-arrow-button button-down">
+                <a class="sorting-arrow-button button-down" tabindex="0">
                   <span class="visually-hidden">От большего к меньшему</span>
                 </a>
               </div>
             </div>
             <div class="catalog">
               <ul class="catalog-product-list">
-                <li class="catalog-product-item">
+                <!-- каласс "new-item" на li добоаляет метку "new" -->
+                <li class="catalog-product-item new-item" tabindex="0">
                   <img class="catalog-product-image" src="./image/catalog-gallary/product-1.png" alt="Любительская
-                      селфи-палка">
+                      селфи-палка" >
                   <a class="catalog-product-link" href="#">
                     <div class="product-card-wrapper">
                       <h3 class="catalog-product-title">Любительская<br>
@@ -239,7 +239,7 @@
                   </a>
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
-                <li class="catalog-product-item">
+                <li class="catalog-product-item" tabindex="0">
                   <img class="catalog-product-image" src="./image/catalog-gallary/product-2.png"
                     alt="Профессиональная селфи-палка ">
                   <a class="catalog-product-link" href="#">
@@ -250,7 +250,7 @@
                   </a>
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
-                <li class="catalog-product-item">
+                <li class="catalog-product-item " tabindex="0">
                   <img class="catalog-product-image" src="./image/catalog-gallary/product-3.png" alt="Непотопляемая
                       селфи-палка">
                   <a class="catalog-product-link" href="#">
@@ -262,7 +262,7 @@
                   </a>
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
-                <li class="catalog-product-item">
+                <li class="catalog-product-item" tabindex="0">
                   <img class="catalog-product-image" src="./image/catalog-gallary/product-4.png"
                     alt="Селфи-палка «Следуй за мной»">
                   <a class="catalog-product-link" href="#">
