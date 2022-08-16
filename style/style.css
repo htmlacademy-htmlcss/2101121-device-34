@@ -384,6 +384,119 @@ body {
   top: 10px;
 }
 
+.popover-basket {
+  width: 320px;
+  min-height: 301px;
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  right: -53px;
+  top: 41px;
+  z-index: 1;
+}
+
+.popover-close{
+  display: none;
+  visibility: hidden;
+}
+
+.popover-basket::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url("../image/tooltip-arrow.svg");
+  top: -6px;
+  left: 48%;
+}
+
+.popover-basket-button {
+  position: absolute;
+  background-image: url("../image/popover-close.svg");
+  width: 10px;
+  height: 10px;
+  top: 14px;
+  right: 14px;
+  padding: 10px;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket-product {
+  padding: 20px;
+  position: relative;
+  min-height: 45px;
+}
+
+.popover-basket-link {
+  display: flex;
+}
+
+.basket-img {
+  width: 39px;
+  display: inline-block;
+  position: relative;
+  padding-right: 23px;
+}
+
+.popover-basket-text {
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-footer-block {
+  display: flex;
+  min-height: 42px;
+  background-color: #1A1A1A;
+  padding: 0 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.sum-product,
+.price-product {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+.basket-product + .basket-product:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #FFFFFF;
+  opacity: 0.1;
+  top: -3px;
+  left: 0;
+  right: 0;
+}
+
+.popover-basket-open {
+  height: 50px;
+  background-color: white;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 20px;
+  width: 280px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 .navigation-catalog-button {
   font-family: "Raleway", sans-serif;
   border: none;
@@ -1090,7 +1203,8 @@ body {
   letter-spacing: -0.02em;
   position: relative;
 }
-.about-us-item::before{
+
+.about-us-item::before {
   position: absolute;
   content: "";
   width: 8px;
@@ -1100,6 +1214,7 @@ body {
   top: 5px;
   border-radius: 50%;
 }
+
 .about-us-link {
   padding: 10px 24px;
 }
@@ -2086,9 +2201,11 @@ body {
   margin: 0;
   padding: 0 0 14px 0;
 }
-.modal-qualiti-label{
+
+.modal-qualiti-label {
   position: relative;
 }
+
 .tooltip-toggle {
   width: 26px;
   height: 26px;
@@ -2252,7 +2369,8 @@ body {
   display: grid;
   grid-template-columns: 60px 60px 60px;
 }
-.modal-button-quantiti{
+
+.modal-button-quantiti {
   z-index: 1;
   margin: 0;
   border: 0;
@@ -2265,7 +2383,7 @@ body {
   cursor: pointer;
 }
 
-.quantiti-plus{
+.quantiti-plus {
   --icon: url(../image/plus.svg);
   grid-area: 1 / 3 / 2 / 4;
 
