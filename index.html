@@ -431,48 +431,65 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container modal-contanier-closed">
+    <div class="modal-container modal-contanier-clos">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="modal-form">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <section class="modal-stock">
+          <div class="modal-stock">
             <div class="modal-user">
               <label class="modal-label" for="modal-name">Ваше имя:</label>
               <input class="modal-input modal-input-data" type="text" name="modal-name" id="modal-name"
                 placeholder="Введите имя">
-              <button class="button-modal-name">
+              <button class="button-modal-name" tabindex="1">
                 <span class="visually-hidden">иконка аккаунта</span>
               </button>
             </div>
             <div class="modal-user">
               <label class="modal-label" for="modal-email">Ваш e-mail:</label>
-              <input class="modal-input modal-input-data" type="email" name="modal-email" id="modal-email"
+              <input class="modal-input modal-input-data error" type="email" name="modal-email" id="modal-email"
                 placeholder="почта">
-              <button class="button-modal-mail">
+              <!-- класс "error" в инпуте обрамляет в красный -->
+              <button class="button-modal-mail" tabindex="1">
                 <span class="visually-hidden">иконка почты</span>
               </button>
               <span class="under-modal-input">Забавный у вас адрес</span>
             </div>
-          </section>
-          <section class="modal-stock-two">
+          </div>
+          <div class="modal-stock-two">
             <div class="modal-user">
-              <label class="modal-label" for="modal-name">Что нужно привезти:</label>
-              <input class="modal-input modal-input-deliver" type="text" name="modal-name" id="modal-name"
+              <label class="modal-label" for="modal-deliver">Что нужно привезти:</label>
+              <input class="modal-input modal-input-deliver" type="text" name="modal-deliver" id="modal-deliver"
                 placeholder="В свободной форме">
             </div>
             <div class="modal-user">
-              <label class="modal-label modal-qualiti-label" for="modal-email">Количество:</label>
-              <div class="modal-quantiti-group" >
-                <button class="modal-button-quantiti quantiti-minus"></button>
-                <input class="modal-input modal-input-quantiti" type="number"
-                name="modal-email" id="modal-email" placeholder="1">
-                <button class="modal-button-quantiti quantiti-plus"></button>
+              <label class="modal-label modal-qualiti-label" for="modal-qualiti">Количество:</label>
+              <span class="tooltip" tabindex="0">
+                <button class="tooltip-toggle" type="button" tabindex="1">
+                  <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 0H1V2H3V0Z" fill="black" />
+                    <path d="M3 4H1V12H3V4Z" fill="black" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-choildren">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.
+                </span>
+              </span>
+              <div class="modal-quantiti-group">
+                <button class="modal-button-quantiti quantiti-minus">
+                  <span class="visually-hidden">минус</span>
+                </button>
+                <input class="modal-input modal-input-quantiti" type="number" name="modal-qualiti" id="modal-qualiti"
+                  placeholder="1">
+                <button class="modal-button-quantiti quantiti-plus">
+                  <span class="visually-hidden">плюс</span>
+                </button>
               </div>
             </div>
-          </section>
+          </div>
           <button class="button modal-button">Отправить</button>
         </form>
       </div>

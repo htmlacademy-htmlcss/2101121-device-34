@@ -1088,8 +1088,18 @@ body {
   line-height: 20px;
   padding-left: 37px;
   letter-spacing: -0.02em;
+  position: relative;
 }
-
+.about-us-item::before{
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #FFC700;
+  left: 3px;
+  top: 5px;
+  border-radius: 50%;
+}
 .about-us-link {
   padding: 10px 24px;
 }
@@ -2009,13 +2019,18 @@ body {
   ;
 }
 
+.modal-contanier-close {
+  display: none;
+  visibility: hidden;
+}
+
 .modal {
   position: relative;
   width: 920px;
   min-height: 568px;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 64px 70px;
+  padding: 63px 70px;
   background-color: white;
   margin: auto;
   box-sizing: border-box;
@@ -2025,10 +2040,13 @@ body {
   display: grid;
   gap: 42px;
 }
-.modal-button{
+
+.modal-button {
   max-width: max-content;
   background-color: inherit;
+  line-height: 20px;
 }
+
 .modal-close-button {
   position: absolute;
   right: 70px;
@@ -2050,13 +2068,15 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
-.modal-stock{
+
+.modal-stock {
   display: flex;
   gap: 40px;
 }
-.modal-label{
+
+.modal-label {
   position: relative;
-  font-family: "Rubik",sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2066,74 +2086,148 @@ body {
   margin: 0;
   padding: 0 0 14px 0;
 }
-.modal-qualiti-label::before{
-  content: "";
+.modal-qualiti-label{
+  position: relative;
+}
+.tooltip-toggle {
   width: 26px;
   height: 26px;
   background: #FFE17F;
   position: absolute;
   border-radius: 50%;
+  right: 34px;
+  top: -4px;
+  border: 0;
+  cursor: pointer;
 }
-.modal-qualiti-label::after{
+
+.tooltip:hover > .tooltip-text,
+.tooltip:focus-visible > .tooltip-text {
+  display: block;
+  visibility: visible;
+}
+
+.tooltip-text {
+  width: 200px;
+  min-height: 160px;
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  z-index: 1;
+  padding: 17px 19px 0 19px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  top: 32px;
+  left: -14px;
+  display: none;
+  visibility: hidden;
+}
+
+.tooltip-text::before {
+  position: absolute;
   content: "";
-  position: absolute;
-  background-image: url("../image/info.svg");
-  background-repeat: no-repeat;
+  width: 14px;
+  height: 6px;
+  background-image: url("../image/tooltip-arrow.svg");
+  top: -6px;
+  left: 147px;
+  transform: translate(-50%, 0);
+
 }
-.button-modal-mail{
+
+.button-modal-mail {
   position: absolute;
-  top: 56px;
-  right: 20px;
+  top: 43px;
+  right: 8px;
   width: 15px;
   height: 12px;
-  background: url("../image/mail.svg") no-repeat;
+  background: url("../image/mail.svg") no-repeat center;
   margin: 0;
-  padding: 0;
+  border: 0;
+  opacity: 0.3;
+  padding: 20px;
+}
+
+.button-modal-name {
+  position: absolute;
+  top: 43px;
+  right: 8px;
+  width: 15px;
+  height: 12px;
+  background: url("../image/human.svg") no-repeat center;
+  margin: 0;
+  padding: 20px;
   border: 0;
   opacity: 0.3;
 }
-.button-modal-name{
-  position: absolute;
-  top: 56px;
-  right: 20px;
-  width: 15px;
-  height: 12px;
-  background: url("../image/human.svg") no-repeat;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-.modal-input-data{
+
+.modal-input-data {
   width: 360px;
 }
-.modal-stock-two{
+
+.modal-stock-two {
   display: flex;
   gap: 40px;
 }
-.modal-user{
+
+.modal-user {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.modal-input{
+
+.modal-input {
   background: #F0F0F0;
   height: 60px;
   padding: 20px;
   padding-right: 50px;
   box-sizing: border-box;
-  font-family: "Rubik",sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: rgb(0, 0, 0, 0.3);
-  border:none;
+  color: black;
+  border: none;
 }
-.modal-input-deliver{
+
+.modal-input::-webkit-input-placeholder {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.modal-input:-moz-placeholder {
+  /*Firefox 18-*/
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.modal-input::-moz-placeholder {
+  /*Firefox 19+*/
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.modal-input:-ms-input-placeholder {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.modal-input:hover,
+.modal-button-quantiti:hover {
+  background-color: #DCDCDC;
+}
+
+.modal-input:focus,
+.modal-button-quantiti:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.modal-input-deliver {
   width: 540px;
 }
-.modal-input-quantiti{
-  width: 60px;
+
+.modal-input-quantiti {
   height: 60px;
   border: 0;
   padding: 0;
@@ -2141,54 +2235,63 @@ body {
   color: #000000;
   align-items: center;
   text-align: center;
+  width: 180px;
+  grid-area: 1 / 1 / 2 / 4;
 }
+
+.modal-input-quantiti::-webkit-input-placeholder {
+  color: black;
+}
+
 .modal-input-quantiti::-webkit-outer-spin-button,
-.modal-input-quantiti::-webkit-inner-spin-button{
+.modal-input-quantiti::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.modal-quantiti-group{
-  display: flex;
+
+.modal-quantiti-group {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
 }
 .modal-button-quantiti{
-  position: relative;
-  border: 0;
-  padding: 0;
+  z-index: 1;
   margin: 0;
-  width: 60px ;
-  height: 60px;
-}
-.quantiti-plus::before{
-  content: "";
-  position: absolute;
-  background-image: url("../image/plus.svg");
-  background-repeat: no-repeat;
-  width: 16px ;
+  border: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 16px;
   height: 16px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  background: var(--icon) no-repeat center;
+  place-self: center;
+  cursor: pointer;
 }
-.quantiti-minus::before{
-  content: "";
-  position: absolute;
-  background-image: url("../image/minus.svg");
-  background-repeat: no-repeat;
-  width: 16px ;
-  height: 16px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+
+.quantiti-plus{
+  --icon: url(../image/plus.svg);
+  grid-area: 1 / 3 / 2 / 4;
+
 }
-.under-modal-input{
+
+.quantiti-minus {
+  --icon: url(../image/minus.svg);
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.under-modal-input {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #FF3D3D;
 }
-.modal-button{
+
+.modal-button {
   min-width: 200px;
 }
+
+.error {
+  border: 2px solid red;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
