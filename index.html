@@ -40,6 +40,35 @@
               <a class="navigation-user-link basket-item" href="#">Корзина
                 <span class="basket-quantity">2</span>
               </a>
+              <div class="popover-basket popover-close">
+                <ul class="basket-product-list">
+                  <li class="basket-product">
+                    <button class="popover-basket-button">
+                      <span class="visually-hidden">удалить товар</span>
+                    </button>
+                    <a class="popover-basket-link">
+                      <img class="basket-img" src="./image/catalog-gallary/product-1.png" alt="Любительская селфи-палка"
+                        tabindex="0">
+                      <p class="popover-basket-text">Любительская<br>селфи-палка</p>
+                    </a>
+                  </li>
+                  <li class="basket-product">
+                    <button class="popover-basket-button">
+                      <span class="visually-hidden">удалить товар</span>
+                    </button>
+                    <a class="popover-basket-link">
+                      <img class="basket-img" src="./image/catalog-gallary/product-2.png"
+                        alt="Профессиональная селфи-палка" tabindex="0">
+                      <p class="popover-basket-text">Профессиональная селфи-палка</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="popover-footer-block">
+                  <p class="sum-product">Товаров: 2</p>
+                  <p class="price-product">Сумма: 2000 ₽</p>
+                </div>
+                <button class="popover-basket-open">Открыть корзину</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -431,6 +460,69 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-contanier-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-form">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <div class="modal-stock">
+            <div class="modal-user">
+              <label class="modal-label" for="modal-name">Ваше имя:</label>
+              <input class="modal-input modal-input-data" type="text" name="modal-name" id="modal-name"
+                placeholder="Введите имя">
+              <button class="button-modal-name" tabindex="1">
+                <span class="visually-hidden">иконка аккаунта</span>
+              </button>
+            </div>
+            <div class="modal-user">
+              <label class="modal-label" for="modal-email">Ваш e-mail:</label>
+              <input class="modal-input modal-input-data error" type="email" name="modal-email" id="modal-email"
+                placeholder="почта">
+              <!-- класс "error" в инпуте обрамляет в красный -->
+              <button class="button-modal-mail" tabindex="1">
+                <span class="visually-hidden">иконка почты</span>
+              </button>
+              <span class="under-modal-input">Забавный у вас адрес</span>
+            </div>
+          </div>
+          <div class="modal-stock-two">
+            <div class="modal-user">
+              <label class="modal-label" for="modal-deliver">Что нужно привезти:</label>
+              <input class="modal-input modal-input-deliver" type="text" name="modal-deliver" id="modal-deliver"
+                placeholder="В свободной форме">
+            </div>
+            <div class="modal-user">
+              <label class="modal-label modal-qualiti-label" for="modal-qualiti">Количество:</label>
+              <span class="tooltip" tabindex="0">
+                <button class="tooltip-toggle" type="button" tabindex="1">
+                  <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 0H1V2H3V0Z" fill="black" />
+                    <path d="M3 4H1V12H3V4Z" fill="black" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-choildren">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.
+                </span>
+              </span>
+              <div class="modal-quantiti-group">
+                <button class="modal-button-quantiti quantiti-minus">
+                  <span class="visually-hidden">минус</span>
+                </button>
+                <input class="modal-input modal-input-quantiti" type="number" name="modal-qualiti" id="modal-qualiti"
+                  placeholder="1">
+                <button class="modal-button-quantiti quantiti-plus">
+                  <span class="visually-hidden">плюс</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="button modal-button">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
