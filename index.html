@@ -392,7 +392,7 @@
             <span class="visually-hidden">Логотип разработчика «HTML Academy.</span>
             <svg class="htmlacademy-image" width="115" height="34" viewBox="0 0 115 34" fill="currentColor"
               aria-label="Логотип разработчика «HTML Academy." xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="#FFC700" >
+              <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="#FFC700" />
               <path
                 d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"
                 fill="#FFC700" />
@@ -431,6 +431,52 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-contanier-closed">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-form">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <section class="modal-stock">
+            <div class="modal-user">
+              <label class="modal-label" for="modal-name">Ваше имя:</label>
+              <input class="modal-input modal-input-data" type="text" name="modal-name" id="modal-name"
+                placeholder="Введите имя">
+              <button class="button-modal-name">
+                <span class="visually-hidden">иконка аккаунта</span>
+              </button>
+            </div>
+            <div class="modal-user">
+              <label class="modal-label" for="modal-email">Ваш e-mail:</label>
+              <input class="modal-input modal-input-data" type="email" name="modal-email" id="modal-email"
+                placeholder="почта">
+              <button class="button-modal-mail">
+                <span class="visually-hidden">иконка почты</span>
+              </button>
+              <span class="under-modal-input">Забавный у вас адрес</span>
+            </div>
+          </section>
+          <section class="modal-stock-two">
+            <div class="modal-user">
+              <label class="modal-label" for="modal-name">Что нужно привезти:</label>
+              <input class="modal-input modal-input-deliver" type="text" name="modal-name" id="modal-name"
+                placeholder="В свободной форме">
+            </div>
+            <div class="modal-user">
+              <label class="modal-label modal-qualiti-label" for="modal-email">Количество:</label>
+              <div class="modal-quantiti-group" >
+                <button class="modal-button-quantiti quantiti-minus"></button>
+                <input class="modal-input modal-input-quantiti" type="number"
+                name="modal-email" id="modal-email" placeholder="1">
+                <button class="modal-button-quantiti quantiti-plus"></button>
+              </div>
+            </div>
+          </section>
+          <button class="button modal-button">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
