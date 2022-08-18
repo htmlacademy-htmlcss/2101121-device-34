@@ -1756,6 +1756,7 @@ visibility: visible;
 
 .catalog-filter-button {
   width: 100%;
+  background-color: inherit
 }
 
 .catalog-filter-item + .catalog-filter-item {
