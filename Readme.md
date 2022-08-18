@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Danylo Voloshyn](https://up.htmlacademy.ru/htmlcss/34/user/2101121).
-* Наставник: `Неизвестно`.
+* Наставник: [Саша Сударев](https://htmlacademy.ru/profile/id1152185)
 
 ---
 
