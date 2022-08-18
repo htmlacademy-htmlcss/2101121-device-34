@@ -1779,7 +1779,9 @@ visibility: visible;
 .range-input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
+.range-input[type='number'] {
+  -moz-appearance:textfield;
+}
 .range {
   position: relative;
   margin-bottom: 31px;
