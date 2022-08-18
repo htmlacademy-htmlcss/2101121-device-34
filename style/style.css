@@ -1630,6 +1630,7 @@ visibility: visible;
   list-style: none;
   display: flex;
   gap: 37px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -1846,6 +1847,7 @@ visibility: visible;
   border: none;
   margin: auto 220px auto auto;
   display: block;
+  max-width: 220px;
 }
 
 .sorting-arrow-button {
