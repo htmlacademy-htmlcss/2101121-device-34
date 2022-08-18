@@ -136,6 +136,7 @@ body {
   border-radius: 0 50px 50px 0;
   margin-left: -2px;
   min-width: 160px;
+  max-width: 180px;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
@@ -387,6 +388,7 @@ visibility: visible;
   border-radius: 50%;
   left: -31px;
   top: 10px;
+  max-width: 22px;
 }
 
 .popover-basket {
@@ -541,6 +543,7 @@ visibility: visible;
   cursor: pointer;
   z-index: 2;
   outline: none;
+  max-width: 260px;
 }
 
 .navigation-catalog-button:after {
@@ -682,6 +685,7 @@ visibility: visible;
 .product-ad-image {
   display: block;
   position: relative;
+  object-fit: contain ;
 }
 
 .product-ad-title {
@@ -982,10 +986,11 @@ visibility: visible;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
+  max-width: 163px;
   min-width: 163px;
   background-color: inherit;
   position: relative;
-  height: 40px;
+  min-height: 40px;
   cursor: pointer;
   padding: 0;
   box-sizing: border-box;
@@ -1007,7 +1012,8 @@ visibility: visible;
 .advantages-link-active {
   background-color: #000000;
   color: #FFE17F;
-  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
   text-align: start;
   position: relative;
   margin-left: 0;
@@ -1077,6 +1083,7 @@ visibility: visible;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 34px;
+  max-width: 500px;
 }
 
 .advantages-text {
@@ -1166,9 +1173,8 @@ visibility: visible;
 }
 
 .delivery-text {
-  padding-top: 31px;
   display: block;
-  padding-left: 6px;
+  padding: 31px 150px 10px 150px;
 }
 
 .about-us-wrapper {
@@ -1390,7 +1396,7 @@ visibility: visible;
 }
 
 .its-free {
-  margin-left: auto;
+  margin-left:222px;
   position: relative;
 }
 
@@ -1416,6 +1422,7 @@ visibility: visible;
   width: 1160px;
   margin: 0 auto;
   padding-top: 52px;
+  margin-bottom: 40px;
 }
 
 .footer-logo {
