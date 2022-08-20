@@ -1660,7 +1660,7 @@ visibility: visible;
 
 .catalog-filter-wrapper {
   width: 320px;
-  padding: 25px 40px 10px 60px;
+  padding: 27px 40px 10px 60px;
   box-sizing: border-box;
 }
 
@@ -1679,6 +1679,7 @@ visibility: visible;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: auto 0;
+  position: relative;
 }
 
 .class-title {
@@ -1849,11 +1850,22 @@ visibility: visible;
   font-family: "Rubik", sans-serif;
   background-color: inherit;
   border: none;
-  margin: auto 220px auto auto;
+  margin: auto 202px auto auto;
   display: block;
+  min-width: 145px;
   max-width: 220px;
+  appearance: none;
 }
+.sorting-title::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("../image/select-arrow.svg") no-repeat center ;
+  right: -344px;
+  top: -5px;
 
+}
 .sorting-arrow-button {
   display: block;
   background-image: url(../image/sorting-top.svg);
