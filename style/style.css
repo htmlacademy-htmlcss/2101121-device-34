@@ -70,12 +70,13 @@ body {
   background-color: inherit;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
-  padding: 10px 10px 10px 46px;
+  padding: 10px 10px 7px 46px;
   width: 359px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Rubik", sans-serif;
-  height: 40px;
+  min-height: 40px;
+  height: 100%;
   position: relative;
   outline: none;
 }
@@ -86,7 +87,8 @@ body {
   background: url("../image/search.svg") no-repeat center;
   width: 20px;
   height: 20px;
-  top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 14px;
   display: block;
 }
@@ -894,7 +896,7 @@ body {
   padding: 0;
   display: flex;
   gap: 40px;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .main-category-link::before {
@@ -1368,7 +1370,7 @@ body {
 
 .mailing-input {
   font-family: "Rubik", sans-serif;
-  width: 557px;
+  width: 563px;
   height: 56px;
   padding: 15px 10px 14px 16px;
   border: 0;
@@ -1405,7 +1407,6 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-left: 6px;
   display: block;
 }
 
@@ -1422,7 +1423,7 @@ body {
 }
 
 .its-free {
-  margin-left: 222px;
+  margin-left: auto;
   position: relative;
 }
 
@@ -1670,9 +1671,11 @@ body {
   line-height: 19px;
   position: relative;
 }
-.breadcrumbs-item{
+
+.breadcrumbs-item {
   position: relative;
 }
+
 .breadcrumbs-item + .breadcrumbs-item::before {
   content: "";
   position: absolute;
@@ -1732,13 +1735,13 @@ body {
   width: 200px;
 }
 
-.catalog-filter-group::before {
+.catalog-filter-title::before {
   position: absolute;
   content: "";
   height: 2px;
   background-color: #000000;
   width: 100%;
-  top: -54px;
+  top: -4px;
 }
 
 .catalog-product-wrapper {
@@ -1756,6 +1759,7 @@ body {
   padding: 12px 10px 20px 0;
   box-sizing: border-box;
   font-weight: 700;
+
 }
 
 .catalog-filter-list {
@@ -1974,14 +1978,15 @@ body {
   background: #FFC700;
 }
 
-.catalog-product-item:focus-within
- {
+.catalog-product-item:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
-.catalog-product-link:focus{
+
+.catalog-product-link:focus {
   outline: none;
 }
+
 .product-card-button {
   top: 170px;
   left: 70px;
@@ -2074,7 +2079,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  padding:10px 4px 10px 10px;
+  padding: 10px 4px 10px 10px;
 }
 
 .catalog-product-button:hover {
@@ -2157,10 +2162,11 @@ body {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
+
 .pagination-page-number-current,
 .pagination-page-number-current:hover,
 .pagination-page-number-current:focus,
-.pagination-page-number-current:active{
+.pagination-page-number-current:active {
   cursor: default;
   outline: none;
   color: rgb(68, 68, 68, 0.1);
@@ -2551,9 +2557,11 @@ body {
 .error {
   border: 2px solid #FF0000;
 }
-.modal-input.error ~ .under-modal-input{
+
+.modal-input.error ~ .under-modal-input {
   color: #FF0000;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
