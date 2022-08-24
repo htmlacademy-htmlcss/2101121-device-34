@@ -8,6 +8,7 @@
     <meta name="description"
       content="Магазин девайс. У нас очень широкий ассортимент. Мы предлагаем профессиональные консультации и привлекательные цены. Мы предоставляем разумный выбор.">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon/favicon.png">
   </head>
 
@@ -21,7 +22,7 @@
         <div class="navigation-search">
           <form class="search-form" method="post" name="search-form" action="https://echo.htmlacademy.ru/">
             <label class="search-label" for="search-input">
-              <span class="visually-hidden">Поиск по сайту</span>
+              <span class="visually-hidden">Поиск по сайту.</span>
             </label>
             <div class="search-input-wrapper">
               <input class="search-input" type="search" name="search-input" id="search-input"
@@ -30,9 +31,11 @@
             <button class="navigation-button" type="submit">Найти</button>
           </form>
           <ul class="navigation-user-list">
-            <li class="navigation-user-item ">
-              <a class="navigation-user-link user-item" href="#">Коля Петухов
-                <span class="logout">Выйти</span></a>
+            <li class="navigation-user-item user-point">
+              <a class="navigation-user-link user-item" href="#">Коля Петухов</a>
+            </li>
+            <li class="navigation-user-item logout-item">
+              <a class="navigation-user-link logout" href="#">Выйти</a>
             </li>
             <li class="navigation-user-item ">
               <a class="navigation-user-link compare-item" href="#">Сравнить</a>
@@ -44,22 +47,22 @@
               <div class="popover-basket popover-close">
                 <ul class="basket-product-list">
                   <li class="basket-product">
-                    <button class="popover-basket-button">
-                      <span class="visually-hidden">удалить товар</span>
+                    <button type="button" class="popover-basket-button">
+                      <span class="visually-hidden">удалить товар.</span>
                     </button>
                     <a class="popover-basket-link">
-                      <img class="basket-img" src="./image/catalog-gallary/product-1.png" alt="Любительская селфи-палка"
-                        tabindex="0">
+                      <img class="basket-img" width="39" height="43" src="./image/catalog-gallary/product-1.png"
+                        alt="Любительская селфи-палка.">
                       <p class="popover-basket-text">Любительская<br>селфи-палка</p>
                     </a>
                   </li>
                   <li class="basket-product">
-                    <button class="popover-basket-button">
-                      <span class="visually-hidden">удалить товар</span>
+                    <button type="button" class="popover-basket-button">
+                      <span class="visually-hidden">удалить товар.</span>
                     </button>
                     <a class="popover-basket-link">
-                      <img class="basket-img" src="./image/catalog-gallary/product-2.png"
-                        alt="Профессиональная селфи-палка" tabindex="0">
+                      <img class="basket-img" width="39" height="43" src="./image/catalog-gallary/product-2.png"
+                        alt="Профессиональная селфи-палка.">
                       <p class="popover-basket-text">Профессиональная селфи-палка</p>
                     </a>
                   </li>
@@ -68,7 +71,7 @@
                   <p class="sum-product">Товаров: 2</p>
                   <p class="price-product">Сумма: 2000 ₽</p>
                 </div>
-                <button class="popover-basket-open">Открыть корзину</button>
+                <button type="button" class="popover-basket-open">Открыть корзину</button>
               </div>
             </li>
           </ul>
@@ -84,7 +87,7 @@
                   <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link" href="#">Моноподы для cелфи</a>
+                  <a class="navigation-catalog-link" href="./catalog.html">Моноподы для cелфи</a>
                 </li>
                 <li class="navigation-catalog-item">
                   <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
@@ -120,11 +123,12 @@
       </nav>
     </header>
     <main class="main-catalog">
+      <h1 class="visually-hidden">Каталог моноподов магазина электроники «Девайс».</h1>
       <div class="main-header">
         <h2 class="main-title">Моноподы для селфи</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Главная</a>
+            <a class="breadcrumbs-link" href="./index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
@@ -136,7 +140,7 @@
       </div>
       <section class="catalog-contenier">
         <div class="sortting-wrapper">
-          <h2 class="visually-hidden">Каталог товаров с фильтрами</h2>
+          <h2 class="visually-hidden">Каталог товаров с фильтрами.</h2>
           <div class="catalog-filter-wrapper">
             <h3 class="class-title">фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
@@ -154,15 +158,16 @@
                     </div>
                   </div>
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-range-label label-min" style="margin-left: 0;">
+                    <label class="catalog-range-label label-min" style="margin-left: 0;" tabindex="0">
                       <!--Стиль для изменения положения надписи-->
                       от
-                      <input class="range-input" type="number" value="0" name="min-price">
+                      <input class="range-input" type="number" value="0" name="min-price" tabindex="1">
                     </label>
-                    <label class="catalog-range-label label-max" style="margin-right: 73px;">
+                    <label class="catalog-range-label label-max" style="margin-right: 73px;" tabindex="0">
                       <!--Стиль для изменения положения надписи-->
                       до
-                      <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                      <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px"
+                        tabindex="1">
                     </label>
                   </div>
                 </div>
@@ -237,28 +242,29 @@
           <div class="catalog-product-wrapper">
             <div class="catalog-sorting">
               <h3 class="sorting-title">сортировка:</h3>
-              <select class="sorting-select">
+              <select class="sorting-select" name="soring" aria-label="сортировка товаров по критериям.">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="wrapper-arrow-button">
                 <a class="sorting-arrow-button button-up" tabindex="0">
-                  <span class="visually-hidden">От меньшего к большему</span>
+                  <span class="visually-hidden">От меньшего к большему.</span>
                 </a>
               </div>
               <div class="wrapper-arrow-button">
                 <a class="sorting-arrow-button button-down" tabindex="0">
-                  <span class="visually-hidden">От большего к меньшему</span>
+                  <span class="visually-hidden">От большего к меньшему.</span>
                 </a>
               </div>
             </div>
             <div class="catalog">
               <ul class="catalog-product-list">
                 <!-- каласс "new-item" на li добоаляет метку "new" -->
-                <li class="catalog-product-item new-item" tabindex="0">
-                  <img class="catalog-product-image" src="./image/catalog-gallary/product-1.png" alt="Любительская
-                      селфи-палка">
+                <li class="catalog-product-item new-item">
+                  <img class="catalog-product-image" width="360" height="380"
+                    src="./image/catalog-gallary/product-1.png" alt="Любительская
+                      селфи-палка.">
                   <a class="catalog-product-link" href="#">
                     <div class="product-card-wrapper">
                       <h3 class="catalog-product-title">Любительская<br>
@@ -268,9 +274,9 @@
                   </a>
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
-                <li class="catalog-product-item" tabindex="0">
-                  <img class="catalog-product-image" src="./image/catalog-gallary/product-2.png"
-                    alt="Профессиональная селфи-палка ">
+                <li class="catalog-product-item">
+                  <img class="catalog-product-image" width="360" height="380"
+                    src="./image/catalog-gallary/product-2.png" alt="Профессиональная селфи-палка. ">
                   <a class="catalog-product-link" href="#">
                     <div class="product-card-wrapper">
                       <h3 class="catalog-product-title">Профессиональная<br>селфи-палка </h3>
@@ -279,9 +285,10 @@
                   </a>
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
-                <li class="catalog-product-item " tabindex="0">
-                  <img class="catalog-product-image" src="./image/catalog-gallary/product-3.png" alt="Непотопляемая
-                      селфи-палка">
+                <li class="catalog-product-item ">
+                  <img class="catalog-product-image" width="360" height="380"
+                    src="./image/catalog-gallary/product-3.png" alt="Непотопляемая
+                      селфи-палка.">
                   <a class="catalog-product-link" href="#">
                     <div class="product-card-wrapper">
                       <h3 class="catalog-product-title">Непотопляемая<br>
@@ -291,9 +298,9 @@
                   </a>
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
-                <li class="catalog-product-item" tabindex="0">
-                  <img class="catalog-product-image" src="./image/catalog-gallary/product-4.png"
-                    alt="Селфи-палка «Следуй за мной»">
+                <li class="catalog-product-item">
+                  <img class="catalog-product-image" width="360" height="380"
+                    src="./image/catalog-gallary/product-4.png" alt="Селфи-палка «Следуй за мной».">
                   <a class="catalog-product-link" href="#">
                     <div class="product-card-wrapper">
                       <h3 class="catalog-product-title">Селфи-палка «Следуй<br> за мной»</h3>
@@ -303,7 +310,7 @@
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
               </ul>
-              <button class="catalog-product-button">Загрузить ещё</button>
+              <button type="button" class="catalog-product-button">Загрузить ещё</button>
               <ul class="catalog-product-pagination">
                 <li class="catalog-product-pagination-item">
                   <a class="catalog-product-pagination-link" href="#">Назад</a>
@@ -332,124 +339,124 @@
         </div>
       </section>
     </main>
-  </body>
-  <footer class="page-footer footer-index">
-    <div class="footer-wrapper">
-      <div class="footer-adress-block">
-        <a class="footer-logo-link" href="#">
-          <img class="footer-logo" src="./image/device-logo-yellow.svg" alt="Логотип магазина «Девайс»."></a>
-        <h2 class="visually-hidden">Адрес</h2>
-        <address class="footer-adress">
-          <p class="footer-adress-text">Санкт-Петербург, набережная
-            реки Карповки, 5, литера П.</p>
-        </address>
-      </div>
-      <div class="advantages-footer-wrapper">
-        <section class="footer-advantages">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantages-footer-list">
-            <li class="advantages-footer-item">
-              <a class="advantages-footer-link" href="#">Доставка</a>
-            </li>
-            <li class="advantages-footer-item">
-              <a class="advantages-footer-link" href="#">Гарантия</a>
-            </li>
-            <li class="advantages-footer-item">
-              <a class="advantages-footer-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </section>
-        <section class="social-footer">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social-footer-list">
-            <li class="social-footer-item">
-              <a class="social-footer-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-                <svg class="footer-social-svg" width="14" height="12" viewBox="0 0 14 12" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12.4431 0.0735832L0.623071 4.63158C-0.183596 4.95558 -0.178929 5.40558 0.475071 5.60625L3.50974 6.55292L10.5311 2.12292C10.8631 1.92092 11.1664 2.02958 10.9171 2.25092L5.2284 7.38492H5.22707L5.2284 7.38558L5.01907 10.5136C5.32574 10.5136 5.46107 10.3729 5.63307 10.2069L7.10707 8.77358L10.1731 11.0382C10.7384 11.3496 11.1444 11.1896 11.2851 10.5149L13.2977 1.02958C13.5037 0.203583 12.9824 -0.170417 12.4431 0.0735832Z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer-item">
-              <a class="social-footer-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-                <svg class="footer-social-svg" width="16" height="11" viewBox="0 0 16 11" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.6671 1.67464C15.5765 1.35146 15.4 1.05887 15.1564 0.827973C14.9059 0.589975 14.5989 0.41973 14.2644 0.333306C13.0124 0.00330585 7.99641 0.00330593 7.99641 0.00330593C5.9053 -0.0204856 3.8147 0.0841556 1.73641 0.316639C1.40187 0.409448 1.09545 0.583497 0.844411 0.823306C0.597745 1.06064 0.419078 1.35331 0.325745 1.67397C0.10154 2.8818 -0.00739387 4.1082 0.000411455 5.33664C-0.00758854 6.56397 0.101078 7.78997 0.325745 8.99931C0.417078 9.31864 0.595078 9.60997 0.842411 9.84531C1.08974 10.0806 1.39774 10.2506 1.73641 10.3406C3.00508 10.67 7.99641 10.67 7.99641 10.67C10.0902 10.6938 12.1835 10.5892 14.2644 10.3566C14.5989 10.2702 14.9059 10.1 15.1564 9.86197C15.3999 9.63112 15.5762 9.33849 15.6664 9.01531C15.8965 7.80794 16.0083 6.58103 16.0004 5.35197C16.0177 4.11771 15.906 2.88502 15.6671 1.67397V1.67464ZM6.40174 7.61931V3.05464L10.5751 5.33731L6.40174 7.61931Z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer-item">
-              <a class="social-footer-link" href=" https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
-                <svg class="footer-social-svg" width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_11534_7054)">
+    <footer class="page-footer footer-index">
+      <div class="footer-wrapper">
+        <div class="footer-adress-block">
+          <a class="footer-logo-link" href="./index.html">
+            <img class="footer-logo" width="145" height="36" src="./image/device-logo-yellow.svg"
+              alt="Логотип магазина «Девайс»."></a>
+          <h2 class="visually-hidden">Адрес.</h2>
+          <address class="footer-adress">
+            <p class="footer-adress-text">Санкт-Петербург, набережная
+              реки Карповки, 5, литера П.</p>
+          </address>
+        </div>
+        <div class="advantages-footer-wrapper">
+          <section class="footer-advantages">
+            <h2 class="visually-hidden">Преимущества.</h2>
+            <ul class="advantages-footer-list">
+              <li class="advantages-footer-item">
+                <a class="advantages-footer-link" href="#">Доставка</a>
+              </li>
+              <li class="advantages-footer-item">
+                <a class="advantages-footer-link" href="#">Гарантия</a>
+              </li>
+              <li class="advantages-footer-item">
+                <a class="advantages-footer-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </section>
+          <section class="social-footer">
+            <h2 class="visually-hidden">Социальные сети.</h2>
+            <ul class="social-footer-list">
+              <li class="social-footer-item">
+                <a class="social-footer-link" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram.</span>
+                  <svg class="footer-social-svg" width="14" height="12" viewBox="0 0 14 12" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M10.3467 0.154515C11.9467 -0.34346 13.12 0.4533 13.76 1.25006C14.2933 1.05087 14.9333 0.85168 15.5733 0.65249C15.5733 1.44925 15.04 2.04682 14.72 2.24601C15.4667 2.4452 16 1.84763 16 1.84763C15.8933 2.74398 15.04 3.54074 14.5067 3.73993C14.2933 10.0144 11.52 14.0978 5.01333 13.9982C4.48 13.9982 5.12 13.9982 4.58667 13.9982C4.26667 13.9982 0.64 13.5998 0 12.2055C2.13333 12.4047 3.62667 11.8071 4.37333 11.11C3.52 10.8112 1.81333 10.7116 1.6 8.3213C1.92 8.52049 2.13333 8.62009 2.77333 8.52049C1.6 7.72373 0.32 7.02657 0.426667 5.03467C0.746667 5.33345 1.38667 5.53264 1.70667 5.43305C1.06667 5.23386 -0.213333 2.3456 0.853333 0.85168C2.56 2.54479 4.37333 4.23791 7.57333 4.3375C7.78667 2.24601 8.64 0.85168 10.3467 0.154515Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_11534_7054">
-                      <rect width="16" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-          </ul>
+                      d="M12.4431 0.0735832L0.623071 4.63158C-0.183596 4.95558 -0.178929 5.40558 0.475071 5.60625L3.50974 6.55292L10.5311 2.12292C10.8631 1.92092 11.1664 2.02958 10.9171 2.25092L5.2284 7.38492H5.22707L5.2284 7.38558L5.01907 10.5136C5.32574 10.5136 5.46107 10.3729 5.63307 10.2069L7.10707 8.77358L10.1731 11.0382C10.7384 11.3496 11.1444 11.1896 11.2851 10.5149L13.2977 1.02958C13.5037 0.203583 12.9824 -0.170417 12.4431 0.0735832Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer-item">
+                <a class="social-footer-link" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube.</span>
+                  <svg class="footer-social-svg" width="16" height="11" viewBox="0 0 16 11" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.6671 1.67464C15.5765 1.35146 15.4 1.05887 15.1564 0.827973C14.9059 0.589975 14.5989 0.41973 14.2644 0.333306C13.0124 0.00330585 7.99641 0.00330593 7.99641 0.00330593C5.9053 -0.0204856 3.8147 0.0841556 1.73641 0.316639C1.40187 0.409448 1.09545 0.583497 0.844411 0.823306C0.597745 1.06064 0.419078 1.35331 0.325745 1.67397C0.10154 2.8818 -0.00739387 4.1082 0.000411455 5.33664C-0.00758854 6.56397 0.101078 7.78997 0.325745 8.99931C0.417078 9.31864 0.595078 9.60997 0.842411 9.84531C1.08974 10.0806 1.39774 10.2506 1.73641 10.3406C3.00508 10.67 7.99641 10.67 7.99641 10.67C10.0902 10.6938 12.1835 10.5892 14.2644 10.3566C14.5989 10.2702 14.9059 10.1 15.1564 9.86197C15.3999 9.63112 15.5762 9.33849 15.6664 9.01531C15.8965 7.80794 16.0083 6.58103 16.0004 5.35197C16.0177 4.11771 15.906 2.88502 15.6671 1.67397V1.67464ZM6.40174 7.61931V3.05464L10.5751 5.33731L6.40174 7.61931Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer-item">
+                <a class="social-footer-link" href=" https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter.</span>
+                  <svg class="footer-social-svg" width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11534_7054)">
+                      <path
+                        d="M10.3467 0.154515C11.9467 -0.34346 13.12 0.4533 13.76 1.25006C14.2933 1.05087 14.9333 0.85168 15.5733 0.65249C15.5733 1.44925 15.04 2.04682 14.72 2.24601C15.4667 2.4452 16 1.84763 16 1.84763C15.8933 2.74398 15.04 3.54074 14.5067 3.73993C14.2933 10.0144 11.52 14.0978 5.01333 13.9982C4.48 13.9982 5.12 13.9982 4.58667 13.9982C4.26667 13.9982 0.64 13.5998 0 12.2055C2.13333 12.4047 3.62667 11.8071 4.37333 11.11C3.52 10.8112 1.81333 10.7116 1.6 8.3213C1.92 8.52049 2.13333 8.62009 2.77333 8.52049C1.6 7.72373 0.32 7.02657 0.426667 5.03467C0.746667 5.33345 1.38667 5.53264 1.70667 5.43305C1.06667 5.23386 -0.213333 2.3456 0.853333 0.85168C2.56 2.54479 4.37333 4.23791 7.57333 4.3375C7.78667 2.24601 8.64 0.85168 10.3467 0.154515Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11534_7054">
+                        <rect width="16" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="phone-block">
+          <h2 class="visually-hidden">Телефон.</h2>
+          <address class="footer-phone">
+            <a class="contacts-phone-footer" href="tel:8128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип разработчика «HTML Academy.</span>
+            <svg class="htmlacademy-image" width="115" height="34" viewBox="0 0 115 34" fill="currentColor"
+              aria-label="Логотип разработчика «HTML Academy." xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="#FFC700" />
+              <path
+                d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"
+                fill="#FFC700" />
+              <path
+                d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"
+                fill="#FFC700" />
+              <path
+                d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"
+                fill="#FFC700" />
+              <path
+                d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
+                fill="#FFC700" />
+              <path
+                d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"
+                fill="#FFC700" />
+              <path
+                d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"
+                fill="#FFC700" />
+              <path
+                d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"
+                fill="#FFC700" />
+              <path
+                d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z"
+                fill="#FFC700" />
+              <path
+                d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"
+                fill="#FFC700" />
+              <path
+                d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z"
+                fill="#FFC700" />
+              <path
+                d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"
+                fill="#FFC700" />
+            </svg>
+          </a>
         </section>
       </div>
-      <section class="phone-block">
-        <h2 class="visually-hidden">Телефон</h2>
-        <address class="footer-phone">
-          <a class="contacts-phone-footer" href="tel:8128121212">Тел.: +7 (812) 812-12-12</a>
-        </address>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Логотип разработчика «HTML Academy.</span>
-          <svg class="htmlacademy-image" width="115" height="34" viewBox="0 0 115 34" fill="currentColor"
-            aria-label="Логотип разработчика «HTML Academy." xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="#FFC700" />
-            <path
-              d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"
-              fill="#FFC700" />
-            <path
-              d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"
-              fill="#FFC700" />
-            <path
-              d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"
-              fill="#FFC700" />
-            <path
-              d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
-              fill="#FFC700" />
-            <path
-              d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"
-              fill="#FFC700" />
-            <path
-              d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"
-              fill="#FFC700" />
-            <path
-              d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"
-              fill="#FFC700" />
-            <path
-              d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z"
-              fill="#FFC700" />
-            <path
-              d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"
-              fill="#FFC700" />
-            <path
-              d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z"
-              fill="#FFC700" />
-            <path
-              d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"
-              fill="#FFC700" />
-          </svg>
-        </a>
-      </section>
-    </div>
-  </footer>
+    </footer>
   </body>
 
 </html>
