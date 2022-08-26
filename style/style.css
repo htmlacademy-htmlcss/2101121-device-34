@@ -631,6 +631,8 @@ body {
   text-transform: uppercase;
   display: block;
   padding: 12px 9px;
+  border: none;
+  background-color: inherit;
 }
 
 .products-ad {
