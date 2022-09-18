@@ -947,6 +947,7 @@ body {
   position: relative;
   overflow: hidden;
   min-height: max-content;
+  min-width: max-content;
   margin-bottom: 71px;
 }
 
@@ -1200,10 +1201,14 @@ body {
   width: 1160px;
   box-sizing: border-box;
   padding-top: 45px;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 108px;
   grid-template-columns: 520px 532px;
   padding-bottom: 69px;
+}
+.about-us{
+  width:520px;
 }
 
 .about-us-title,
@@ -1436,6 +1441,8 @@ body {
 .page-footer {
   background-color: #444444;
   min-height: 321px;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .footer-wrapper {
